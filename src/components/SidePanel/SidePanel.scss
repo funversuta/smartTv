@@ -1,0 +1,93 @@
+.side-panel {
+  padding: 60px 30px;
+  background: #86d3f4;
+  position: absolute;
+  width: 400px;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .input {
+    width: 100%;
+    background: none;
+    border: none;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    outline: none;
+    cursor: default;
+  }
+
+  h3 {
+    text-align: center;
+    margin: 10px 0;
+    font-weight: normal;
+    font-size: 26px;
+  }
+  p {
+    text-align: center;
+    margin: 10px 0;
+  }
+}
+
+.closer {
+  background: #ffffff;
+  width: 80px;
+  height: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  .cross {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transition: 0.3s;
+
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 3px;
+      background: black;
+      transition: 0.3s;
+    }
+
+    &:before {
+      transform: rotate(45deg);
+    }
+
+    &:after {
+      transform: rotate(-45deg);
+    }
+
+    &:hover {
+      background: #86d3f4;
+      cursor: pointer;
+      &:after {
+        transform: rotate(45deg);
+      }
+
+      &:before {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}
+
+.confirm-container {
+  margin-top: 20px;
+  padding: 0 30px;
+  display: flex;
+  justify-content: center;
+
+  &-2 {
+    font-size: small;
+    text-align: center;
+  }
+}

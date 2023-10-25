@@ -1,0 +1,16 @@
+.keyboard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.key {
+    margin: 5px;
+
+    &:focus {
+        background: grey;
+    }
+
+    &.wide-key {
+        grid-column: 1/3;
+    }
+}

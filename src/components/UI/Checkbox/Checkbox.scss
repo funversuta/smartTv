@@ -1,0 +1,38 @@
+input.checkbox {
+  display: none;
+}
+
+input.checkbox + label {
+  cursor: pointer;
+  font-size: 15px;
+  color: #444;
+  width: 210px;
+  display: block;
+  margin-left: 45px;
+  padding: 0 10px;
+  position: relative;
+
+  &:before {
+    left: -40px;
+    top: 0px;
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    border: 2px solid #555;
+    background: no-repeat #aaa;
+  }
+}
+
+input.checkbox:checked + label:before {
+  background: no-repeat #aaa url("../../../Images/check.svg");
+  background-size: 20px;
+  background-position: center;
+}
+
+.checkbox-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}

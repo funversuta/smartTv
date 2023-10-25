@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/smartTv/static/css/main.6f1e424e.css",
+    "main.js": "/smartTv/static/js/main.f6393d93.js",
+    "index.html": "/smartTv/index.html",
+    "static/media/check.svg": "/smartTv/static/media/check.e43c8e0b46db5a5e2433.svg",
+    "main.6f1e424e.css.map": "/smartTv/static/css/main.6f1e424e.css.map",
+    "main.f6393d93.js.map": "/smartTv/static/js/main.f6393d93.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6f1e424e.css",
+    "static/js/main.f6393d93.js"
+  ]
+}
